@@ -34,10 +34,25 @@ jobs:
       run: |
         jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
 
-    - name: Commit changes
+    - name: Commit and push changes (with PAT fallback)
+      env:
+        # Optional secret; create in repo settings as ACTIONS_PUSH_TOKEN with a PAT that has 'repo' scope
+        PAT: ${{ secrets.ACTIONS_PUSH_TOKEN }}
       run: |
+        set -e
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add .
         git commit -m "Automated update of talk locations" || echo "No changes to commit"
-        git push
+        # If a PAT is provided, override remote to use it (bypasses branch protection that blocks GITHUB_TOKEN)
+        if [ -n "$PAT" ]; then
+          echo "Using PAT to push"
+          git remote set-url origin "https://x-access-token:$PAT@github.com/${{ github.repository }}.git"
+        else
+          echo "Using default GITHUB_TOKEN to push"
+        fi
+        # Push explicitly to main (adjust if default branch changes)
+        git push origin HEAD:main || {
+          echo "Initial push failed. If this is a permission issue, add a PAT secret ACTIONS_PUSH_TOKEN or enable write permission for GITHUB_TOKEN.";
+          exit 1;
+        }
