@@ -1,5 +1,8 @@
 name: Scrape Talk Locations
 
+permissions:
+  contents: write
+
 on:
   push:
     paths:
@@ -12,12 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: true
+        fetch-depth: 0
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.9'  # Specify the Python version you need
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
