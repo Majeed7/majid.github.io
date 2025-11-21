@@ -110,7 +110,8 @@ def main():
         md_content = build_markdown(entry, collection)
         title = entry.get('title', 'untitled')
         slug = slugify(title)
-        year = entry.get('year', datetime.utcnow().year)
+        # Normalize year to string for consistent sorting/grouping
+        year = str(entry.get('year', datetime.utcnow().year))
         years.add(year)
         filename = out_dir / f"{year}-01-01-{slug}.md"
         if filename.exists():
@@ -127,13 +128,21 @@ def main():
     if index_path:
         index_path.parent.mkdir(parents=True, exist_ok=True)
         # Build Liquid/Markdown index grouped by year (descending)
-        years_sorted = sorted(years, reverse=True)
+        # Convert year strings to ints where possible for numeric sort
+        years_ints = []
+        for y in years:
+            try:
+                years_ints.append(int(str(y)))
+            except ValueError:
+                continue
+        years_sorted = sorted(years_ints, reverse=True)
         lines = ["---","layout: single","title: \"Publications\"","permalink: /publications/","author_profile: true","---","","{% assign pubs = site.publications | sort: 'year' | reverse %}"]
         for y in years_sorted:
             lines.append(f"## {y}")
             lines.append("")
             lines.append("<ul>")
-            lines.append("{% for p in pubs %}{% if p.year == '" + str(y) + "' %}<li>{% if p.link %}<a href='{{ p.link }}'>{% endif %}{{ p.title | markdownify | remove: '"' | strip_html }}{% if p.link %}</a>{% endif %}. {{ p.citation }}{% if p.doi %} DOI: <a href='https://doi.org/{{ p.doi }}'>{{ p.doi }}</a>{% endif %}</li>{% endif %}{% endfor %}")
+            # Removed the Liquid remove filter to avoid Python quoting issues
+            lines.append("{% for p in pubs %}{% if p.year == '" + str(y) + "' %}<li>{% if p.link %}<a href='{{ p.link }}'>{% endif %}{{ p.title | markdownify | strip_html }}{% if p.link %}</a>{% endif %}. {{ p.citation }}{% if p.doi %} DOI: <a href='https://doi.org/{{ p.doi }}'>{{ p.doi }}</a>{% endif %}</li>{% endif %}{% endfor %}")
             lines.append("</ul>")
             lines.append("")
         index_path.write_text("\n".join(lines))
