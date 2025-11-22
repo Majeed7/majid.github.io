@@ -41,3 +41,225 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* Publications page styling */
+.pubs {
+  margin-top: 1.5rem;
+}
+
+.pubs-year {
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.6rem;
+  border-left: 3px solid #4b9cd3;
+  font-weight: 600;
+}
+
+.pubs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pubs-item {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pubs-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.pubs-authors {
+  font-size: 0.96rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222;
+}
+
+.pubs-highlight {
+  font-weight: 600;
+  color: #16558f;
+}
+
+.pubs-title {
+  margin-top: 0.25rem;
+  font-size: 1.04rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.pubs-details {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.pubs-meta {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.pubs-link,
+.pubs-doi {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.pubs-link:hover,
+.pubs-doi:hover {
+  text-decoration: underline;
+}
+
+.pubs-separator {
+  margin: 0 0.4rem;
+  color: #aaa;
+}
+
+/* Teaching page styling */
+.teaching-list {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.teaching-item {
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.teaching-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.teaching-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .teaching-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+.teaching-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.teaching-meta {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.teaching-points {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+  color: #1f2933;
+}
+
+.teaching-points li {
+  margin-bottom: 0.35rem;
+  line-height: 1.45;
+}
+
+/* CV page styling */
+.cv {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.cv-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cv-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-left: 4px solid #16558f;
+  padding-left: 0.75rem;
+  margin: 0;
+}
+
+.cv-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+@media (min-width: 760px) {
+  .cv-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+.cv-card {
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.75rem;
+  background: rgba(22, 85, 143, 0.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(22, 85, 143, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cv-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cv-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.cv-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #0f2f4f;
+}
+
+.cv-card-meta {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f4d7a;
+}
+
+.cv-card-submeta {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.cv-points {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #1f2933;
+}
+
+.cv-points li {
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}

@@ -26,22 +26,22 @@ author:
   avatar           : "profile.png"
   name             : "Majid Mohammadi"
   pronouns         : # example: "he/him", "she/her", "they/them" (optional)
-  bio              : "(Add a 1–2 sentence research/interest summary here)"
-  location         : "(City, Country)"
-  employer         : "(Affiliation / Institution)"
+  bio              : "Postdoctoral researcher in interpretable machine learning, decision-making, and AI for scientific discovery."
+  location         : "The Hague, The Netherlands"
+  employer         : "Utrecht University"
   uri              : # Personal website URL if different
-  email            : "(email@domain)" 
+  email            : "majid.mohammadi690@gmail.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=7oVmQIYAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-7131-8724"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  pubmed           : # URL
+  researchgate     : "https://www.researchgate.net/profile/Majid-Mohammadi-6?ev=hdr_xprf"
   scopus           : # URL
 
   # Repositories and software development
@@ -54,7 +54,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  # bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "majid-mohammadi-aa17323a"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -71,7 +71,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "MajidMo80592063"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username

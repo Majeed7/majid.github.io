@@ -13,4 +13,4 @@ citation: |
 Recursive Self-Similarity in Deep Weight Spaces of Neural Architectures: A Fractal and Coarse Geometry Perspective
 ==================================================================================================================
 
-*arXiv preprint arXiv:2503.14298*, 2025.
+*Ineternational Conference on Learning Representation, 2025.

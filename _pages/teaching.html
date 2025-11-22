@@ -1,12 +1,56 @@
 ---
-layout: archive
+layout: single
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+courses:
+  - title: "Advanced Machine Learning"
+    institution: "Vrije Universiteit Amsterdam"
+    years: "2022-2024"
+    bullets:
+      - "Co-lectured for 700+ students across lectures, assignments, and project supervision."
+      - "Coordinated a team of 15 teaching assistants and co-designed examinations."
+  - title: "AI in Health - Machine Learning Module"
+    institution: "Vrije Universiteit Amsterdam"
+    years: "2021-2023"
+    bullets:
+      - "Delivered lectures on interpretable machine learning and supervised learning workflows."
+      - "Created homework assignments and co-authored the module exam for cohorts of 250+ students."
+  - title: "Intelligent System - Statistical Analysis Module"
+    institution: "Vrije Universiteit Amsterdam"
+    years: "2022"
+    bullets:
+      - "Led sessions on statistical inference, hypothesis testing, and algorithm performance comparison."
+      - "Designed exercises reinforcing statistical analysis for AI systems."
+  - title: "Machine Learning & Deep Learning"
+    institution: "Jheronimus Academy of Data Science"
+    years: "2020"
+    bullets:
+      - "Delivered labs on convolutional neural networks and model implementation in Python."
+  - title: "Machine Learning Module"
+    institution: "TU Delft"
+    years: "2017"
+    bullets:
+      - "Taught hinge-loss optimization for support vector machines and introduced kernel methods."
+  - title: "Bayesian Multi-Criteria Decision-Making"
+    institution: "TU Delft"
+    years: "2022"
+    bullets:
+      - "Designed a Bayesian decision-making module with Python-based MCMC tutorials."
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="teaching-list">
+	{% for course in page.courses %}
+		<div class="teaching-item">
+			<div class="teaching-header">
+				<div class="teaching-title">{{ course.title }}</div>
+				<div class="teaching-meta">{{ course.institution }} &middot; {{ course.years }}</div>
+			</div>
+			<ul class="teaching-points">
+				{% for bullet in course.bullets %}
+					<li>{{ bullet }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	{% endfor %}
+</div>

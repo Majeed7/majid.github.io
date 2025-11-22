@@ -29,10 +29,6 @@ Teaching
 ======
 Add entries to `_teaching/` for courses or tutorials.
 
-Talks
-======
-Add entries to `_talks/` and generate a talk map if desired.
-
 Template Attribution
 ======
 This site uses the Academic Pages template (forked from Minimal Mistakes). See the original project on GitHub for documentation.
