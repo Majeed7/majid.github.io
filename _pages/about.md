@@ -1,46 +1,40 @@
 ---
-permalink: /
-title: "Majid Mohammadi"
+permalink: /about/
+title: "About"
 author_profile: true
-redirect_from: 
-  - /about/
+redirect_from:
+  - /
   - /about.html
 ---
 
-Welcome! I'm Majid Mohammadi. This site is built with the Academic Pages Jekyll template. 
+Currently I am a senior researcher at Utrecht University, affiliated with the 
+<a href="https://www.uu.nl/en/research/ai-data-science/ai-technology-for-life" target="_blank" rel="noopener">AI Technology for Life</a> initiative and the 
+<a href="https://www.uu.nl/en/research/biomolecular-mass-spectrometry-and-proteomics" target="_blank" rel="noopener">Biomolecular Mass Spectrometry and Proteomics</a> group. 
 
-Add a short introduction here describing your current position, research areas, and key interests.
+My work bridges interpretable and causality-aware machine learning, multi-criteria decision making, and AI for scientific discovery—especially in healthcare, proteomics, and knowledge-intensive domains. I design methods that produce faithful local and global explanations (e.g., Shapley and game-theoretic formulations), enable robust ranking and aggregation, and advance transparency in data-driven decision pipelines.
 
-For example (replace with real text): I am a PhD candidate in X at Y University. My research focuses on A, B, and C, with applications to D. I am particularly interested in E and F.
-
-Recent Updates
+Academic Path
 ======
-Use posts in `_posts/` to add news items. (e.g., first-author paper accepted at Conference 2025.)
+I earned my Ph.D. in the Netherlands (awarded <em>cum laude</em>, the highest distinction in Dutch academia) where I developed simulated annealing and statistical evaluation frameworks for ontology alignment and logistics interoperability. After my Ph.D. I held postdoctoral positions at Eindhoven (JADS / TU/e ecosystem) and Vrije Universiteit Amsterdam (AI in Medicine), focusing on explainable AI for clinical guidelines, knowledge graph–driven reasoning, and trustworthy model interpretation. I have also collaborated with industry and research partners on applications spanning mass spectrometry, clinical search, and infrastructure code analysis.
 
-Research Areas
+Selected Research Themes
 ======
-List 3–5 focus areas or keywords here.
+- Interpretable & game-theoretic machine learning (exact Shapley for kernel models)
+- Multi-criteria and group decision analysis (probabilistic and Bayesian ranking)
+- Clinical and biomedical AI (guideline linkage, proteomics representation learning)
+- Reliable model explanation & interaction detection (non-additive local explanations)
 
-Publications
+Affiliations & Collaboration
 ======
-Add individual markdown files to `_publications/` following the samples. A generated list will appear on the Publications page.
+At Utrecht University I contribute to GenAI for Mass Spectrometry and cross-disciplinary AI for Life initiatives. I previously engaged with VU Amsterdam on medical AI, and Eindhoven/JADS on cybersecurity, software analytics, and interpretable neural optimization. International collaborations include PostNetAI fellowships exploring kernel discrepancy measures and causality-aware attribution.
 
-Teaching
+Distinctions
 ======
-Add entries to `_teaching/` for courses or tutorials.
+<em>Cum laude</em> Ph.D. distinction; multiple invited collaborations (CISPA, Marburg University); contributions to ontology alignment evaluation campaigns and explanatory AI workshops.
 
-Template Attribution
+Contact & Profiles
 ======
-This site uses the Academic Pages template (forked from Minimal Mistakes). See the original project on GitHub for documentation.
+See the sidebar for Google Scholar, X (Twitter), LinkedIn, GitHub, ORCID, and ResearchGate links. Feel free to reach out for collaboration in explainable ML, decision analytics, or scientific AI applications.
 
-Next Steps For Me
-======
-1. Replace the placeholder biography text above.
-2. Add a professional photo to `images/profile.png` (or update `avatar` in `_config.yml`).
-3. Populate publications, talks, teaching, and portfolio sections.
-4. Set social/media links in `_config.yml`.
-5. (Optional) Enable analytics and comments.
-
-For Full Documentation
-------
-Refer to the original Academic Pages repository and wiki for advanced customization.
+—
+This page intentionally focuses on a concise professional overview. For structured lists (education, positions) refer to the <a href="/cv/">CV</a>.
