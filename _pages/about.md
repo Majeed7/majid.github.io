@@ -17,24 +17,5 @@ Academic Path
 ======
 I earned my Ph.D. in the Netherlands (awarded <em>cum laude</em>, the highest distinction in Dutch academia) where I developed simulated annealing and statistical evaluation frameworks for ontology alignment and logistics interoperability. After my Ph.D. I held postdoctoral positions at Eindhoven (JADS / TU/e ecosystem) and Vrije Universiteit Amsterdam (AI in Medicine), focusing on explainable AI for clinical guidelines, knowledge graph–driven reasoning, and trustworthy model interpretation. I have also collaborated with industry and research partners on applications spanning mass spectrometry, clinical search, and infrastructure code analysis.
 
-Selected Research Themes
-======
-- Interpretable & game-theoretic machine learning (exact Shapley for kernel models)
-- Multi-criteria and group decision analysis (probabilistic and Bayesian ranking)
-- Clinical and biomedical AI (guideline linkage, proteomics representation learning)
-- Reliable model explanation & interaction detection (non-additive local explanations)
-
-Affiliations & Collaboration
-======
-At Utrecht University I contribute to GenAI for Mass Spectrometry and cross-disciplinary AI for Life initiatives. I previously engaged with VU Amsterdam on medical AI, and Eindhoven/JADS on cybersecurity, software analytics, and interpretable neural optimization. International collaborations include PostNetAI fellowships exploring kernel discrepancy measures and causality-aware attribution.
-
-Distinctions
-======
-<em>Cum laude</em> Ph.D. distinction; multiple invited collaborations (CISPA, Marburg University); contributions to ontology alignment evaluation campaigns and explanatory AI workshops.
-
-Contact & Profiles
-======
-See the sidebar for Google Scholar, X (Twitter), LinkedIn, GitHub, ORCID, and ResearchGate links. Feel free to reach out for collaboration in explainable ML, decision analytics, or scientific AI applications.
-
 —
 This page intentionally focuses on a concise professional overview. For structured lists (education, positions) refer to the <a href="/cv/">CV</a>.
