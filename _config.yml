@@ -23,7 +23,7 @@ repository               : "Majeed7/majeed7.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Majid Mohammadi"
   pronouns         : # example: "he/him", "she/her", "they/them" (optional)
   bio              : "Postdoctoral researcher in interpretable machine learning, decision-making, and AI for scientific discovery."
