@@ -58,18 +58,14 @@ experience:
     years: "2020"
     bullets:
       - "Researched deep learning, cybersecurity, and interpretable AI while supervising multiple M.Sc. theses."
-  - organization: "Freelancer / Self-employed"
-    title: "Web Developer"
-    location: "Mashhad, Iran"
-    years: "2011-2015"
+  - organization: "Freelance / Senior Web Developer"
+    title: "Web & Desktop Application Developer"
+    location: "Mashhad, Iran (remote collaborations)"
+    years: "2009-2015"
     bullets:
-      - "Designed web and desktop applications with complex data backends using ASP.NET MVC for regional clients."
-  - organization: "Senior Web Developer"
-    title: "Web Developer"
-    location: "Mashhad, Iran"
-    years: "2009-2011"
-    bullets:
-      - "Partnered with international teams (Omnia, Prototype) to build and maintain ASP.NET and ASP.NET MVC platforms."
+      - "Delivered web and desktop applications with complex data backends using ASP.NET and ASP.NET MVC for regional clients."
+      - "Collaborated with international teams (Omnia, Prototype) to build and maintain scalable ASP.NET/MVC platforms."
+      - "Led end-to-end development: requirements gathering, architecture, data modeling, deployment, and maintenance."
 ---
 
 <div class="cv">
